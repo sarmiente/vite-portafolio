@@ -1,0 +1,4 @@
+{
+    "title": "Bienvenido {{name}}",
+    "type": "Idioma actual : {{language}}"
+}

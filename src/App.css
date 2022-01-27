@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Comforter&family=Dongle:wght@300&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background: url('./trade.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+.App-header::after{
+  content: " "; 
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(90deg, #000, #000);
+  opacity: .7; 
+}
+
+
+.cuadro {
+  background: url('./cryp.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 90vh;
+  width: 40%;
+  display: block;
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+  color: black;
+  border-radius: 10px;
+  -webkit-box-shadow: 3px 3px 3px 0px #000000; 
+  box-shadow: 3px 3px 3px 0px #000000;
+  z-index: 1;
+}
+.cuadro::after{
+  content: " "; 
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(90deg, #000, #000);
+  opacity: .7;
+  z-index: -1;
+  border-radius: 10px;
+}
+
+
+
+@media only screen and (max-width: 880px) {
+  .cuadro {
+    width: 85%;
+  }
+}
+.card {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 25px;
+  display: inline-block;
+}
+
+.logo {
+  width: 90px;
+}
+
+.name {
+  font-size: 45px;
+  font-family: 'Comforter', cursive;
+  color: white;  
+}
+
+.intro {
+  font-size: 1.5rem;
+  color: white;
+  font-family: 'Dongle', sans-serif;  
+  
+}
+
+.card .img-top {
+  display: none;
+  position: absolute;
+  width: 90px;
+  top: 0;
+  left: 0;
+  z-index: 99;
+}
+
+.card:hover .img-top {
+  display: inline;
+}
+
+.buttons{
+  padding: 15px;
+  margin-top: 20px;
+  font-family: 'Dongle', sans-serif;
+}
+
+.buttons a {
+  margin-bottom: 15px;
+  text-decoration: none;
+  color: white;
+  border-radius: 10px;
+  display: block;
+  border: 1px solid white;
+  box-shadow: 2px 2px 2px 0px white;  
+}
+.buttons a:hover {
+  background-color: #fff;
+  color: black;   
+}
+.buttons li {
+  list-style: none;  
+}
+
+.donate {
+  margin-top: 20%;
+  padding: 15px;
+}
+.donate p{
+  color: white;
+  font-family: 'Dongle', sans-serif;
+  
+}
+
+.social a {
+  color: #bcfe3c;
+  display: inline-block;
+}
+.social a:hover {
+  transform: translateY(-3px);
+}
+
+
+/*Donations bottom*/
+.donate-with-crypto{
+  display: block;
+  background: linear-gradient(to right, rgb(59, 130, 246), rgb(49, 46, 218));
+  color: white;
+  text-decoration: none;
+  font-size: 15px;
+  padding: 0.75rem 0.75rem;
+}
+/* beer icon*/
+.donate-with-crypto span{
+  font-size: 20px;
+}
+
+
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
